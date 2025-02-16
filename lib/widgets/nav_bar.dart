@@ -55,7 +55,7 @@ class _NavBarState extends State<NavBar> {
               navButton('Feedback'),
             ],
           ),
-          Container(
+          SizedBox(
             height: 45,
             child: ElevatedButton(
               style: borderedButtonStyle,

@@ -96,7 +96,7 @@ class _Contaner1State extends State<Contaner1> {
       child: Row(
         children: [
           Expanded(
-            child: Container(
+            child: SizedBox(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -118,7 +118,7 @@ class _Contaner1State extends State<Contaner1> {
                   const SizedBox(height: 30),
                   Row(
                     children: [
-                      Container(
+                      SizedBox(
                         height: 45,
                         child: ElevatedButton.icon(
                           style: ButtonStyle(
