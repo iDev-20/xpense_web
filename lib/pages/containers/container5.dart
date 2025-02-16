@@ -87,7 +87,7 @@ class _Contaner1State extends State<Contaner5> {
               height: 1.2,
             ),
           ),
-          const SizedBox(height: 143),
+          const SizedBox(height: 130),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
