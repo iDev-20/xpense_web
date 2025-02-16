@@ -25,7 +25,7 @@ class _NavBarState extends State<NavBar> {
 
   Widget mobileNavBar() {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 20.0),
+      margin: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 30.0),
       height: 70,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
