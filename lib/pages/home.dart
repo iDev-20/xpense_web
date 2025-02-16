@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:xpense_web/pages/containers/container1.dart';
 import 'package:xpense_web/utils/constants.dart';
 import 'package:xpense_web/widgets/nav_bar.dart';
 
@@ -12,14 +13,15 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    w = MediaQuery.of(context).size.width;
-    h = MediaQuery.of(context).size.height;
+    pageWidth = MediaQuery.of(context).size.width;
+    pageHieght = MediaQuery.of(context).size.height;
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          child: Column(
+          child: const Column(
             children: [
-              NavBar()
+              NavBar(),
+              Contaner1()
             ],
           ),
         ),
