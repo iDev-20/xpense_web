@@ -28,7 +28,7 @@ class _Contaner1State extends State<Contaner2> {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(left: 20, top: 20, right: 20, bottom: 0),
+            padding: const EdgeInsets.only(left: 16, top: 20, right: 16),
             child: Container(
               height: 195,
               decoration: const BoxDecoration(
@@ -41,7 +41,7 @@ class _Contaner1State extends State<Contaner2> {
           ),
           Container(
             width: double.infinity,
-            padding: const EdgeInsets.symmetric(vertical: 40),
+            padding: const EdgeInsets.symmetric(vertical: 20),
             color: Colors.white,
             child: Column(
               // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -131,11 +131,14 @@ class _Contaner1State extends State<Contaner2> {
   }
 
   Widget companyLogo(String image) {
-    return Container(
-      width: 160,
-      height: 36,
-      decoration: BoxDecoration(
-        image: DecorationImage(image: AssetImage(image), fit: BoxFit.contain),
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8.0),
+      child: Container(
+        width: 160,
+        height: 36,
+        decoration: BoxDecoration(
+          image: DecorationImage(image: AssetImage(image), fit: BoxFit.contain),
+        ),
       ),
     );
   }
