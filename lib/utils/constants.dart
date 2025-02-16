@@ -10,6 +10,7 @@ const String illustration3 = 'assets/images/illustration3.png';
 const String google = 'assets/images/google.png';
 const String fb = 'assets/images/fb.png';
 const String cocacola = 'assets/images/cocacola.png';
+const String linkedin = 'assets/images/linkedin.png';
 const String samsung = 'assets/images/samsung.png';
 const String dashnoard = 'assets/images/dashboard.png';
 const String vector1 = 'assets/images/vector.png';

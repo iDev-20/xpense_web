@@ -122,6 +122,7 @@ class _Contaner1State extends State<Contaner2> {
                 companyLogo(fb),
                 companyLogo(google),
                 companyLogo(cocacola),
+                companyLogo(linkedin),
                 companyLogo(samsung),
               ],
             ),

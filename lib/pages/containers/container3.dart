@@ -22,26 +22,66 @@ class _Contaner1State extends State<Contaner3> {
 //============== MOBILE ===============//
 
   Widget mobileContainer1() {
-    return commonContainerMobile(
-      'Alwalys online',
-      'Real-time \nsupport \nwith cloud',
-      'Tellus lacus morbi sagittis lacus in. Amet nisl at '
-          'mauris enim accumsan nisi, tincidunt vel. Enim '
-          'ipsum, amet quis ullamcorper eget ut.',
-      illustration,
+    return Column(
+      children: [
+        commonContainerMobile(
+          'Alwalys online',
+          'Real-time \nsupport \nwith cloud',
+          'Tellus lacus morbi sagittis lacus in. Amet nisl at '
+              'mauris enim accumsan nisi, tincidunt vel. Enim '
+              'ipsum, amet quis ullamcorper eget ut.',
+          illustration,
+        ),
+        commonContainerMobile(
+          'free some cost',
+          'Save cost \nfor you and \nfamily',
+          'Tellus lacus morbi sagittis lacus in. Amet nisl at '
+              'mauris enim accumsan nisi, tincidunt vel. Enim '
+              'ipsum, amet quis ullamcorper eget ut.',
+          illustration2,
+        ),
+        commonContainerMobile(
+          'Use anytime',
+          'Use anytime \nwhen you \nneed',
+          'Tellus lacus morbi sagittis lacus in. Amet nisl at '
+              'mauris enim accumsan nisi, tincidunt vel. Enim '
+              'ipsum, amet quis ullamcorper eget ut.',
+          illustration3,
+        )
+      ],
     );
   }
 
 //============== DESKTOP ===============//
 
   Widget desktopContainer1() {
-    return commonContainer(
-        'Alwalys online',
-        'Real-time \nsupport \nwith cloud',
-        'Tellus lacus morbi sagittis lacus in. Amet nisl at '
-            '\nmauris enim accumsan nisi, tincidunt vel. Enim '
-            '\nipsum, amet quis ullamcorper eget ut.',
-        illustration,
-        false);
+    return Column(
+      children: [
+        commonContainer(
+            'Alwalys online',
+            'Real-time \nsupport \nwith cloud',
+            'Tellus lacus morbi sagittis lacus in. Amet nisl at '
+                '\nmauris enim accumsan nisi, tincidunt vel. Enim '
+                '\nipsum, amet quis ullamcorper eget ut.',
+            illustration,
+            false),
+        commonContainer(
+            'free some cost',
+            'Save cost \nfor you and \nfamily',
+            'Tellus lacus morbi sagittis lacus in. Amet nisl at '
+                '\nmauris enim accumsan nisi, tincidunt vel. Enim '
+                '\nipsum, amet quis ullamcorper eget ut.',
+            illustration2,
+            true),
+        commonContainer(
+            'Use anytime',
+            'Use anytime \nwhen you \nneed',
+            'Tellus lacus morbi sagittis lacus in. Amet nisl at '
+                '\nmauris enim accumsan nisi, tincidunt vel. Enim '
+                '\nipsum, amet quis ullamcorper eget ut.',
+            illustration3,
+            false),
+      ],
+    );
   }
 }
