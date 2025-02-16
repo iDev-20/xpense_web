@@ -14,14 +14,14 @@ class _Contaner1State extends State<Contaner1> {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
-      mobile: mobileContainer1(),
-      desktop: desktopContainer1(),
+      mobile: mobileContainer(),
+      desktop: desktopContainer(),
     );
   }
 
 //============== MOBILE ===============//
 
-  Widget mobileContainer1() {
+  Widget mobileContainer() {
     return SizedBox(
       // margin: EdgeInsets.symmetric(horizontal: pageWidth! / 10, vertical: 20),
       child: Column(
@@ -37,52 +37,50 @@ class _Contaner1State extends State<Contaner1> {
           const SizedBox(
             height: 20,
           ),
-                Text(
-                  'Track your \nExpenses to \nSave Money',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontSize: pageWidth! / 12,
-                      fontWeight: FontWeight.bold,
-                      height: 1.2),
-                ),
-                const SizedBox(height: 10),
-                Text(
-                  'Helps you to organize \nyour income and expanses',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.grey[400],
-                    fontSize: 16,
-                  ),
-                ),
-                const SizedBox(height: 30),
-                SizedBox(
-                  height: 45,
-                  child: ElevatedButton.icon(
-                    style: ButtonStyle(
-                      backgroundColor:
-                          MaterialStateProperty.all(AppColors.primary),
-                    ),
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.arrow_drop_down,
-                      color: Colors.white,
-                    ),
-                    label: const Text(
-                      'Try free Demo',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 20),
-                Text(
-                  '- Web, iOs and Android',
-                  style: TextStyle(
-                    color: Colors.grey[400],
-                    fontSize: 16,
-                  ),
-                ),
-                const SizedBox(height: 20),
-
+          Text(
+            'Track your \nExpenses to \nSave Money',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                fontSize: pageWidth! / 12,
+                fontWeight: FontWeight.bold,
+                height: 1.2),
+          ),
+          const SizedBox(height: 10),
+          Text(
+            'Helps you to organize \nyour income and expanses',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.grey[400],
+              fontSize: 16,
+            ),
+          ),
+          const SizedBox(height: 30),
+          SizedBox(
+            height: 45,
+            child: ElevatedButton.icon(
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(AppColors.primary),
+              ),
+              onPressed: () {},
+              icon: const Icon(
+                Icons.arrow_drop_down,
+                color: Colors.white,
+              ),
+              label: const Text(
+                'Try free Demo',
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+          ),
+          const SizedBox(height: 20),
+          Text(
+            '- Web, iOs and Android',
+            style: TextStyle(
+              color: Colors.grey[400],
+              fontSize: 16,
+            ),
+          ),
+          const SizedBox(height: 20),
         ],
       ),
     );
@@ -90,7 +88,7 @@ class _Contaner1State extends State<Contaner1> {
 
 //============== DESKTOP ===============//
 
-  Widget desktopContainer1() {
+  Widget desktopContainer() {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: pageWidth! / 10, vertical: 20),
       child: Row(

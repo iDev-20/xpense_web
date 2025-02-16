@@ -14,14 +14,14 @@ class _Contaner1State extends State<Contaner2> {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
-      mobile: mobileContainer1(),
-      desktop: desktopContainer1(),
+      mobile: mobileContainer(),
+      desktop: desktopContainer(),
     );
   }
 
 //============== MOBILE ===============//
 
-  Widget mobileContainer1() {
+  Widget mobileContainer() {
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(color: AppColors.primary),
@@ -31,7 +31,7 @@ class _Contaner1State extends State<Contaner2> {
             padding: const EdgeInsets.only(left: 16, top: 20, right: 16),
             child: Container(
               height: 195,
-              width: double.infinity,
+              width: double.infinity, 
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage(dashnoard),
@@ -62,7 +62,7 @@ class _Contaner1State extends State<Contaner2> {
 
 //============== DESKTOP ===============//
 
-  Widget desktopContainer1() {
+  Widget desktopContainer() {
     return Container(
       height: 900,
       width: double.infinity,

@@ -14,14 +14,14 @@ class _Contaner1State extends State<Contaner3> {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
-      mobile: mobileContainer1(),
-      desktop: desktopContainer1(),
+      mobile: mobileContainer(),
+      desktop: desktopContainer(),
     );
   }
 
 //============== MOBILE ===============//
 
-  Widget mobileContainer1() {
+  Widget mobileContainer() {
     return Column(
       children: [
         commonContainerMobile(
@@ -54,7 +54,7 @@ class _Contaner1State extends State<Contaner3> {
 
 //============== DESKTOP ===============//
 
-  Widget desktopContainer1() {
+  Widget desktopContainer() {
     return Column(
       children: [
         commonContainer(

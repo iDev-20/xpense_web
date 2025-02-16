@@ -56,6 +56,7 @@ Widget commonContainer(
                 textAlign: imageLeft ? TextAlign.right : TextAlign.left,
                 style: TextStyle(
                   color: Colors.grey[400],
+                    fontSize: pageWidth! / 70,
                 ),
               ),
               const SizedBox(height: 20),

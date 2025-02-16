@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:xpense_web/pages/containers/container1.dart';
 import 'package:xpense_web/pages/containers/container2.dart';
 import 'package:xpense_web/pages/containers/container3.dart';
+import 'package:xpense_web/pages/containers/container4.dart';
+import 'package:xpense_web/pages/containers/container5.dart';
 import 'package:xpense_web/utils/constants.dart';
 import 'package:xpense_web/widgets/nav_bar.dart';
 
@@ -26,6 +28,8 @@ class _HomeState extends State<Home> {
               Contaner1(),
               Contaner2(),
               Contaner3(),
+              Contaner4(),
+              Contaner5(),
             ],
           ),
         ),
