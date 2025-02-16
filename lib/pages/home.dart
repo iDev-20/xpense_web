@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:xpense_web/utils/constants.dart';
+import 'package:xpense_web/widgets/nav_bar.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -10,8 +12,18 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
+    w = MediaQuery.of(context).size.width;
+    h = MediaQuery.of(context).size.height;
     return Scaffold(
-      body: Container(),
+      body: SingleChildScrollView(
+        child: Container(
+          child: Column(
+            children: [
+              NavBar()
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
