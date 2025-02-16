@@ -31,6 +31,7 @@ class _Contaner1State extends State<Contaner2> {
             padding: const EdgeInsets.only(left: 16, top: 20, right: 16),
             child: Container(
               height: 195,
+              width: double.infinity,
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage(dashnoard),
@@ -74,8 +75,8 @@ class _Contaner1State extends State<Contaner2> {
                   top: -20,
                   right: -20,
                   child: Container(
-                    height: 320,
-                    width: 320,
+                    height: 500,
+                    width: 500,
                     decoration: const BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage(vector1), fit: BoxFit.contain),
@@ -86,8 +87,8 @@ class _Contaner1State extends State<Contaner2> {
                   left: -20,
                   bottom: -20,
                   child: Container(
-                    height: 320,
-                    width: 320,
+                    height: 500,
+                    width: 500,
                     decoration: const BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage(vector2), fit: BoxFit.contain),
@@ -99,7 +100,7 @@ class _Contaner1State extends State<Contaner2> {
                   right: 43,
                   bottom: 0,
                   child: Container(
-                    height: 712,
+                    height: 700,
                     width: double.infinity,
                     decoration: const BoxDecoration(
                       image: DecorationImage(
@@ -131,14 +132,12 @@ class _Contaner1State extends State<Contaner2> {
   }
 
   Widget companyLogo(String image) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 8.0),
-      child: Container(
-        width: 160,
-        height: 36,
-        decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage(image), fit: BoxFit.contain),
-        ),
+    return Container(
+      width: 160,
+      height: 36,
+      margin: const EdgeInsets.only(bottom: 20),
+      decoration: BoxDecoration(
+        image: DecorationImage(image: AssetImage(image), fit: BoxFit.contain),
       ),
     );
   }
